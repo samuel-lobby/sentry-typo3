@@ -21,7 +21,7 @@ class Typo3Context implements ContextInterface
                 'typo3_version' => TYPO3_version,
                 'typo3_mode' => TYPO3_MODE,
                 'application_context' => GeneralUtility::getApplicationContext()->__toString(),
-                'application_version' => PrettyVersions::getVersion(Versions::ROOT_PACKAGE_NAME)->getPrettyVersion(),
+                'application_version' => PrettyVersions::getVersion(Versions::rootPackageName())->getPrettyVersion(),
             ]
         );
     }
